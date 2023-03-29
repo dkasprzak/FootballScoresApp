@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:football_scores_app/models/leauge.dart';
 
 class LeagueSliderWidget extends StatelessWidget {
-  final Leauge leauge;
+  final League league;
 
-  const LeagueSliderWidget({super.key, required this.leauge});
+  const LeagueSliderWidget({super.key, required this.league});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          color: Color.fromARGB(255, 102, 67, 110),
+          color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(25.0))),
       padding: const EdgeInsets.all(10.0),
       margin:
@@ -25,15 +25,15 @@ class LeagueSliderWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.network(
-                leauge.photoUrl,
+                league.photoUrl,
                 width: 20,
                 height: 20,
               ),
               const SizedBox(width: 10),
               Text(
-                leauge.leaugeName,
+                league.leagueName,
                 style: const TextStyle(
-                    color: Colors.white, fontWeight: FontWeight.w600),
+                    color: Color.fromARGB(255, 178, 178, 178), fontWeight: FontWeight.w500),
               ),
             ],
           ),

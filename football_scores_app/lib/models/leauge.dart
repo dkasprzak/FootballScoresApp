@@ -1,6 +1,9 @@
-class Leauge {
+class League {
   final String photoUrl;
-  final String leaugeName;
+  final String leagueName;
 
-  const Leauge({required this.photoUrl, required this.leaugeName});
+  const League({
+      required this.photoUrl,
+      required this.leagueName,
+    });
 }

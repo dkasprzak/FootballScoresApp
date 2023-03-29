@@ -13,7 +13,7 @@ class HeaderWidget extends StatelessWidget {
           const WidgetSpan(
             alignment: PlaceholderAlignment.middle,
             child: SizedBox(
-              height: 8.0,
+              height: 10.0,
               child: Icon(
                 Icons.sports_soccer_rounded,
                 size: 15.0,
